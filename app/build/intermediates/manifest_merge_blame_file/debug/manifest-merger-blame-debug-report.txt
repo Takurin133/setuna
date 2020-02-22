@@ -1,0 +1,97 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ntt.ecl.webrtc.sample_sfu_videochat"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml
+10    ​
+11    <uses-feature android:name="android.hardware.camera" />
+11-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:4:5-60
+11-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:4:19-57
+12    <uses-feature android:name="android.hardware.camera.autofocus" />
+12-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:5:5-70
+12-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:5:19-67
+13    <uses-feature
+13-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:6:5-78
+14        android:glEsVersion="0x00020000"
+14-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:6:19-51
+15        android:required="true" />
+15-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:6:52-75
+16
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:7:5-79
+17-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:7:22-76
+18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+18-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:8:5-76
+18-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:8:22-73
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:9:5-67
+19-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:9:22-64
+20    <uses-permission android:name="android.permission.CAMERA" />
+20-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:10:5-65
+20-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:10:22-62
+21    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+21-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:11:5-71
+21-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:11:22-68
+22    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+22-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:12:5-80
+22-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:12:22-77
+23    ​
+24    <application
+24-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:14:5-31:19
+25        android:allowBackup="true"
+25-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:14:18-44
+26        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+26-->[com.android.support:support-compat:28.0.0] C:\Users\taku1\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:14:45-79
+29        android:label="@string/app_name"
+29-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:15:9-41
+30        android:supportsRtl="true"
+30-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:15:42-68
+31        android:testOnly="true"
+32        android:theme="@style/AppTheme" >
+32-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:16:9-40
+33        <activity
+33-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:17:9-30:20
+34            android:name="com.ntt.ecl.webrtc.sample_sfu_videochat.MainActivity"
+34-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:18:13-80
+35            android:configChanges="orientation|keyboardHidden|screenSize"
+35-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:19:13-74
+36            android:label="@string/title_activity_video_chat"
+36-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:20:13-62
+37            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+37-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:21:13-71
+38            <intent-filter>
+38-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:22:13-29:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:23:17-69
+39-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:23:25-66
+40                <action android:name="android.intent.action.VIEW" />
+40-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:24:17-69
+40-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:24:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:25:17-77
+42-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:25:27-74
+43                <category android:name="android.intent.category.DEFAULT" />
+43-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:26:17-76
+43-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:26:27-73
+44                <category android:name="android.intent.category.BROWSABLE" />
+44-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:27:17-78
+44-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:27:27-75
+45
+46                <data android:scheme="setuna" />
+46-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:28:17-49
+46-->C:\Users\taku1\GLS\skyway-android-sdk-master\examples\sfu-videochat\app\src\main\AndroidManifest.xml:28:23-46
+47            </intent-filter>
+48        </activity>
+49    </application>
+50
+51</manifest>

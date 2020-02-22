@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: :skyway:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bd1e97f1d7d612c36ed34abc06b3d897/skyway/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bd1e97f1d7d612c36ed34abc06b3d897/skyway/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
