@@ -10,77 +10,89 @@
 
 	<Button
 		android:id="@+id/btnAction"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:layout_width="134dp"
+		android:layout_height="61dp"
 		android:layout_marginTop="16dp"
-		android:layout_marginRight="16dp"
+		android:layout_marginRight="12dp"
+		android:layout_marginBottom="30dp"
 		android:text="Join Room"
+		app:layout_constraintBottom_toTopOf="@+id/grdRemote"
 		app:layout_constraintRight_toRightOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />
 
 	<GridView
 		android:id="@+id/grdRemote"
-		android:layout_width="379dp"
-		android:layout_height="431dp"
-		android:layout_marginLeft="16dp"
-		android:layout_marginEnd="16dp"
+		android:layout_width="415dp"
+		android:layout_height="412dp"
+		android:layout_marginEnd="12dp"
 		android:layout_marginBottom="8dp"
 		android:numColumns="2"
 		app:layout_constraintBottom_toTopOf="@+id/svLocalView"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintHorizontal_bias="0.578"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="1.0" />
+		app:layout_constraintVertical_bias="0.902" />
 
 	<view
 		android:id="@+id/svLocalView"
 		class="io.skyway.Peer.Browser.Canvas"
-		android:layout_width="145dp"
-		android:layout_height="133dp"
+		android:layout_width="144dp"
+		android:layout_height="130dp"
+		android:layout_marginStart="76dp"
 		android:layout_marginRight="16dp"
-		android:layout_marginBottom="84dp"
+		android:layout_marginBottom="96dp"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
 		app:layout_constraintStart_toEndOf="@+id/buttonreset" />
 
 	<Button
 		android:id="@+id/switchCameraAction"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="56dp"
-		android:layout_marginTop="84dp"
+		android:layout_width="130dp"
+		android:layout_height="58dp"
+		android:layout_marginStart="60dp"
+		android:layout_marginTop="21dp"
+		android:layout_marginEnd="230dp"
 		android:text="Switch Camera"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/tvOwnId"
+		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/text_view_countdown" />
+		app:layout_constraintTop_toBottomOf="@+id/button_start_pause"
+		app:layout_constraintVertical_bias="0.0" />
 
 	<EditText
 		android:id="@+id/txRoomName"
-		android:layout_width="0dp"
-		android:layout_height="wrap_content"
+		android:layout_width="346dp"
+		android:layout_height="45dp"
 		android:layout_marginLeft="16dp"
 		android:layout_marginTop="16dp"
-		android:layout_marginRight="8dp"
 		android:ems="10"
 		android:hint="Room name"
 		android:inputType="text"
+		app:layout_constraintBottom_toTopOf="@+id/grdRemote"
+		app:layout_constraintEnd_toStartOf="@+id/btnAction"
 		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toLeftOf="@+id/btnAction"
-		app:layout_constraintTop_toTopOf="parent" />
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.0" />
 
 	<TextView
 		android:id="@+id/text_view_countdown"
 		android:layout_width="209dp"
 		android:layout_height="86dp"
+		android:layout_marginTop="30dp"
 		android:layout_marginBottom="136dp"
 		android:text="00:00"
 		android:textSize="80sp"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toStartOf="@+id/svLocalView"
 		app:layout_constraintHorizontal_bias="0.317"
-		app:layout_constraintStart_toStartOf="parent" />
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/grdRemote" />
 
 	<TextView
 		android:id="@+id/tvOwnId"
@@ -103,22 +115,26 @@
 		android:layout_width="94dp"
 		android:layout_height="39dp"
 		android:layout_marginStart="16dp"
+		android:layout_marginTop="13dp"
 		android:layout_marginBottom="84dp"
 		android:text="@string/Start"
 		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintStart_toStartOf="parent" />
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/text_view_countdown" />
 
 	<Button
 		android:id="@+id/buttonreset"
 		android:layout_width="88dp"
 		android:layout_height="37dp"
 		android:layout_marginStart="24dp"
+		android:layout_marginTop="15dp"
 		android:layout_marginBottom="84dp"
 		android:text="@string/reset"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toEndOf="@+id/button_start_pause"
+		app:layout_constraintTop_toBottomOf="@+id/text_view_countdown"
 		tools:ignore="HardcodedText" />
 
 </android.support.constraint.ConstraintLayout>
