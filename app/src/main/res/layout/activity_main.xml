@@ -20,10 +20,10 @@
 
 	<GridView
 		android:id="@+id/grdRemote"
-		android:layout_width="378dp"
-		android:layout_height="414dp"
+		android:layout_width="379dp"
+		android:layout_height="431dp"
 		android:layout_marginLeft="16dp"
-		android:layout_marginEnd="12dp"
+		android:layout_marginEnd="16dp"
 		android:layout_marginBottom="8dp"
 		android:numColumns="2"
 		app:layout_constraintBottom_toTopOf="@+id/svLocalView"
@@ -40,16 +40,17 @@
 		android:layout_width="145dp"
 		android:layout_height="133dp"
 		android:layout_marginRight="16dp"
-		android:layout_marginBottom="104dp"
+		android:layout_marginBottom="84dp"
 		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintRight_toRightOf="parent" />
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/buttonreset" />
 
 	<Button
 		android:id="@+id/switchCameraAction"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginStart="52dp"
-		android:layout_marginTop="100dp"
+		android:layout_marginStart="56dp"
+		android:layout_marginTop="84dp"
 		android:text="Switch Camera"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/text_view_countdown" />
@@ -73,18 +74,19 @@
 		android:id="@+id/text_view_countdown"
 		android:layout_width="209dp"
 		android:layout_height="86dp"
-		android:layout_marginEnd="180dp"
-		android:layout_marginBottom="156dp"
+		android:layout_marginBottom="136dp"
 		android:text="00:00"
 		android:textSize="80sp"
 		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toEndOf="parent" />
+		app:layout_constraintEnd_toStartOf="@+id/svLocalView"
+		app:layout_constraintHorizontal_bias="0.317"
+		app:layout_constraintStart_toStartOf="parent" />
 
 	<TextView
 		android:id="@+id/tvOwnId"
-		android:layout_width="wrap_content"
-		android:layout_height="19dp"
-		android:layout_marginEnd="160dp"
+		android:layout_width="0dp"
+		android:layout_height="13dp"
+		android:layout_marginEnd="68dp"
 		android:layout_marginBottom="36dp"
 		android:focusable="true"
 		android:focusableInTouchMode="true"
@@ -98,10 +100,10 @@
 
 	<Button
 		android:id="@+id/button_start_pause"
-		android:layout_width="104dp"
-		android:layout_height="38dp"
-		android:layout_marginStart="20dp"
-		android:layout_marginBottom="92dp"
+		android:layout_width="94dp"
+		android:layout_height="39dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginBottom="84dp"
 		android:text="@string/Start"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintStart_toStartOf="parent" />
@@ -111,9 +113,11 @@
 		android:layout_width="88dp"
 		android:layout_height="37dp"
 		android:layout_marginStart="24dp"
-		android:layout_marginBottom="92dp"
+		android:layout_marginBottom="84dp"
 		android:text="@string/reset"
 		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toEndOf="@+id/button_start_pause"
 		tools:ignore="HardcodedText" />
 
