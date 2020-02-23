@@ -23,16 +23,16 @@
 		android:layout_width="378dp"
 		android:layout_height="414dp"
 		android:layout_marginLeft="16dp"
-		android:layout_marginTop="8dp"
-		android:layout_marginRight="16dp"
+		android:layout_marginEnd="12dp"
 		android:layout_marginBottom="8dp"
 		android:numColumns="2"
 		app:layout_constraintBottom_toTopOf="@+id/svLocalView"
+		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="1.0"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/txRoomName"
-		app:layout_constraintVertical_bias="0.35" />
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="1.0" />
 
 	<view
 		android:id="@+id/svLocalView"
@@ -40,7 +40,7 @@
 		android:layout_width="145dp"
 		android:layout_height="133dp"
 		android:layout_marginRight="16dp"
-		android:layout_marginBottom="116dp"
+		android:layout_marginBottom="104dp"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintRight_toRightOf="parent" />
 
@@ -48,14 +48,11 @@
 		android:id="@+id/switchCameraAction"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginLeft="16dp"
-		android:layout_marginTop="34dp"
+		android:layout_marginStart="52dp"
+		android:layout_marginTop="100dp"
 		android:text="Switch Camera"
-		app:layout_constraintBottom_toTopOf="@+id/tvOwnId"
-		app:layout_constraintEnd_toStartOf="@+id/buttonreset"
-		app:layout_constraintLeft_toLeftOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/button_start_pause"
-		app:layout_constraintVertical_bias="0.487" />
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/text_view_countdown" />
 
 	<EditText
 		android:id="@+id/txRoomName"
@@ -73,59 +70,51 @@
 		app:layout_constraintTop_toTopOf="parent" />
 
 	<TextView
+		android:id="@+id/text_view_countdown"
+		android:layout_width="209dp"
+		android:layout_height="86dp"
+		android:layout_marginEnd="180dp"
+		android:layout_marginBottom="156dp"
+		android:text="00:00"
+		android:textSize="80sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent" />
+
+	<TextView
 		android:id="@+id/tvOwnId"
 		android:layout_width="wrap_content"
-		android:layout_height="0dp"
-		android:layout_marginLeft="8dp"
-		android:layout_marginTop="180dp"
-		android:layout_marginEnd="140dp"
+		android:layout_height="19dp"
+		android:layout_marginEnd="160dp"
+		android:layout_marginBottom="36dp"
 		android:focusable="true"
 		android:focusableInTouchMode="true"
 		android:text="ID: - "
 		android:textColor="@android:color/white"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="1.0"
-		app:layout_constraintLeft_toLeftOf="parent"
-		app:layout_constraintRight_toLeftOf="@+id/svLocalView"
-		app:layout_constraintTop_toBottomOf="@+id/grdRemote">
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent">
 
 		<requestFocus />
 	</TextView>
 
-	<TextView
-		android:id="@+id/text_view_countdown"
-		android:layout_width="209dp"
-		android:layout_height="86dp"
-		android:text="00:00"
-		android:textSize="80sp"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.086"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.774" />
-
 	<Button
 		android:id="@+id/button_start_pause"
-		android:layout_width="90dp"
-		android:layout_height="34dp"
-		android:layout_marginTop="520dp"
+		android:layout_width="104dp"
+		android:layout_height="38dp"
+		android:layout_marginStart="20dp"
+		android:layout_marginBottom="92dp"
 		android:text="@string/Start"
-		app:layout_constraintEnd_toStartOf="@+id/buttonreset"
-		app:layout_constraintHorizontal_bias="0.285"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="@+id/grdRemote" />
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
 
 	<Button
 		android:id="@+id/buttonreset"
 		android:layout_width="88dp"
 		android:layout_height="37dp"
-		android:layout_marginTop="520dp"
+		android:layout_marginStart="24dp"
+		android:layout_marginBottom="92dp"
 		android:text="@string/reset"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.452"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="@+id/grdRemote"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/button_start_pause"
 		tools:ignore="HardcodedText" />
 
 </android.support.constraint.ConstraintLayout>
